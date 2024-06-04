@@ -8,7 +8,7 @@ In this paper, we introduce the Chaos-Attention net for Promoter Evolution (CAPE
 Furthermore, experimental results confirm CAPE’s efficacy in simulating _in silico_ directed evolution of promoters, marking a significant advancement in predictive modeling for prokaryotic promoter strength. Our paper also presents a user-friendly website for the practical implementation of _in silico_ directed evolution on promoters.
 
 ## Model Architecture
-![The Model Architecture of CAPE](blob:https://imgur.com/764053d5-23d7-419d-900e-82a35056abb1)
+![The Model Architecture of CAPE](https://github.com/BobYHY/CAPE/blob/main/Figure1.png)
 Here is the model architecture of CAPE. First, we employed Basic Local Alignment Search Tool (BLAST) and the Needleman-Wunsch (NW) algorithm to search for sequences exhibiting a certain level of similarity with the target promoter within a prokaryotic promoter database. 
 
 Subsequently, we applied a novel method firstly introduced in this paper, referred to as merged CGR, to convert the promoter sequence into image data capturing evolutionary information. Alongside image information, we applied the kmer2vec method to extract textual information from the promoter sequences. The above two types of information will be input into two different deep learning networks, namely DenseNet and Transformer, respectively. We adapted the structure of DenseNet and Transformer to suit our tasks. 
@@ -22,4 +22,4 @@ For codes, the predictor.zip file contains the data and codes used in our CAPE m
 
 For the availability of the website, we have provided an instruction which is helpful for using the website. And considering potential updates, please refer to this repository for accessing the website. Please note that we will release the website once our article is published.
 
-For supplementary information, please refer to the pdf file.
+For supplementary information, please refer to the Supplementary_Materials_All.pdf file.
