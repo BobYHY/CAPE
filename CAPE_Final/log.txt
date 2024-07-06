@@ -1,0 +1,83 @@
+nohup: ignoring input
+/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/Bio/Application/__init__.py:40: BiopythonDeprecationWarning: The Bio.Application modules and modules relying on it have been deprecated.
+
+Due to the on going maintenance burden of keeping command line application
+wrappers up to date, we have decided to deprecate and eventually remove these
+modules.
+
+We instead now recommend building your command line and invoking it directly
+with the subprocess module.
+  warnings.warn(
+cuda:0
+Fold 1
+Fine_tune_Epoch: [0/200], Train Loss: 1.5505, Train acc: 0.7266, Train R2: 0.0509
+Traceback (most recent call last):
+  File "/home/yhy/cape/CAPE_Final/main_exp_task2.py", line 218, in <module>
+    main()
+  File "/home/yhy/cape/CAPE_Final/main_exp_task2.py", line 194, in main
+    test_loss, test_acc, test_R2, test_mse, test_mae, test_spear = evaluate(model=model, data_loader=test_loader, criterion=criterion, device=device)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/cape/CAPE_Final/train_and_val/train_eval_utils.py", line 60, in evaluate
+    outputs = model(seq_data, pssm_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/cape/CAPE_Final/model/promoter_model.py", line 97, in forward
+    x1 = attn(x1)
+         ^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/cape/CAPE_Final/model/transformer.py", line 25, in forward
+    return self.fn(x, **kwargs) + x
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/cape/CAPE_Final/model/transformer.py", line 35, in forward
+    return self.fn(self.norm(x), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/cape/CAPE_Final/model/transformer.py", line 89, in forward
+    attn = self.selector(sim)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/entmax/activations.py", line 284, in forward
+    return sparsemax(X, dim=self.dim, k=self.k)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/entmax/activations.py", line 223, in sparsemax
+    return SparsemaxFunction.apply(X, dim, k)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/torch/autograd/function.py", line 598, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/entmax/activations.py", line 151, in forward
+    tau, supp_size = _sparsemax_threshold_and_support(X, dim=dim, k=k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yhy/.conda/envs/cape/lib/python3.11/site-packages/entmax/activations.py", line 71, in _sparsemax_threshold_and_support
+    support_size = support.sum(dim=dim).unsqueeze(dim)
+                   ^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 104.00 MiB. GPU 
