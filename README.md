@@ -41,14 +41,11 @@ To reproduce our code, the following environments are required:
 - einops 0.6.0
 
 Then you can reproduce our codes for both Task 1 and Task 2 by
+
     ```
     cd CAPE_Final
     python main_exp_task1.py
     python main_exp_task2.py
-    ```
-
-    ```
-    .\Scripts\deactivate.bat
     ```
 
 ### Directed Evolution for Your Sequences
