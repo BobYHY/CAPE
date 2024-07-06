@@ -18,13 +18,13 @@ The results processed by both models are fed into a fully connected network for 
 ## Availability
 
 ### Structure for Folder CAPE_Final
-data: Contains all relevant data files.
-dataset: Contains dataset loading and processing (including Merged CGR matrix generation).
-model: Contains the network model files.
-train_and_val: Contains training and evaluation related content.
-main_exp_task1.py: Code for Task 1.
-main_exp_task2.py: Code for Task 2.
-best_previous: Pre-trained model for Task 2.
+- data: Contains all relevant data files.
+- dataset: Contains dataset loading and processing (including Merged CGR matrix generation).
+- model: Contains the network model files.
+- train_and_val: Contains training and evaluation related content.
+- main_exp_task1.py: Code for Task 1.
+- main_exp_task2.py: Code for Task 2.
+- best_previous: Pre-trained model for Task 2.
 
 ### Reproducing Our Code
 To reproduce our code, the following environments are required:
