@@ -16,7 +16,6 @@ Subsequently, we applied a novel method firstly introduced in this paper, referr
 The results processed by both models are fed into a fully connected network for integration. Finally, our model can output the predicted strengths of given promoter sequences. Moreover, we introduced a fine-tuning network for transfer learning, which enhances the model’s ability to adapt to various downstream tasks.
 
 ## Availability
-Codes, website instruction, and supplementary information are listed in Github. 
 
 ### Structure for Folder CAPE_Final
 data: Contains all relevant data files.
@@ -28,7 +27,26 @@ main_exp_task2.py: Code for Task 2.
 best_previous: Pre-trained model for Task 2.
 
 ### Reproducing Our Code
-To reproduce our code, please refer to the Environment Setup section.
+To reproduce our code, the following environments are required:
+- MAC OS, Linux or Windows.
+- Python 3.8+.
+- PyTorch 2.0.0
+- CUDA 11.7  if you need train deep learning model with gpu.
+- numpy 1.24.1
+- pandas 2.0.3
+- Biopython 1.81
+- scikit-learn 1.2.2
+- scipy 1.10.1
+- entmax 1.1
+- einops 0.6.0
+
+Then you can reproduce our codes for both Task 1 and Task 2 by
+
+    ```
+    cd CAPE_Final
+    python main_exp_task1.py
+    python main_exp_task2.py
+    ```
 
 ### Directed Evolution for Your Sequences
 For guidance on directed evolution for your sequence, please use our website. We have provided an instruction guide to help you use the website. Given potential updates, refer to this repository for accessing the website. The website will be released once our article is published.
