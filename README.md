@@ -16,10 +16,22 @@ Subsequently, we applied a novel method firstly introduced in this paper, referr
 The results processed by both models are fed into a fully connected network for integration. Finally, our model can output the predicted strengths of given promoter sequences. Moreover, we introduced a fine-tuning network for transfer learning, which enhances the model’s ability to adapt to various downstream tasks.
 
 ## Availability
-Codes, website instruction, and supplementary information are listed here. 
+Codes, website instruction, and supplementary information are listed in Github. 
 
-For codes, the predictor.zip file contains the data and codes used in our CAPE model. Within it, there are "data" folder, "dataset" folder, "model" folder, "train_and_val" folder and the main.py file.
+### Structure for Folder CAPE_Final
+data: Contains all relevant data files.
+dataset: Contains dataset loading and processing (including Merged CGR matrix generation).
+model: Contains the network model files.
+train_and_val: Contains training and evaluation related content.
+main_exp_task1.py: Code for Task 1.
+main_exp_task2.py: Code for Task 2.
+best_previous: Pre-trained model for Task 2.
 
-For the availability of the website, we have provided an instruction which is helpful for using the website. And considering potential updates, please refer to this repository for accessing the website. Please note that we will release the website once our article is published.
+### Reproducing Our Code
+To reproduce our code, please refer to the Environment Setup section.
 
-For supplementary information, please refer to the Supplementary_Materials_All.pdf file.
+### Directed Evolution for Your Sequences
+For guidance on directed evolution for your sequence, please use our website. We have provided an instruction guide to help you use the website. Given potential updates, refer to this repository for accessing the website. The website will be released once our article is published.
+
+### Supplementary Information
+For supplementary information, please refer to the Supplementary_Materials_All.pdf.
