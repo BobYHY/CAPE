@@ -47,6 +47,10 @@ Then you can reproduce our codes for both Task 1 and Task 2 by
     python main_exp_task2.py
     ```
 
+    ```
+    .\Scripts\deactivate.bat
+    ```
+
 ### Directed Evolution for Your Sequences
 For guidance on directed evolution for your sequence, please use our website. We have provided an instruction guide to help you use the website. Given potential updates, refer to this repository for accessing the website. The website will be released once our article is published.
 
