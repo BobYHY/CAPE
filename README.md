@@ -1,7 +1,7 @@
 # CAPE: a deep learning framework with Chaos-Attention net for Promoter Evolution
 
 ## Access to the website
-For guidance on directed evolution for your sequence, please use our website [http://www.cape-promoter.com](http://www.cape-promoter.com). If this link is not accessible, please use [http://47.101.71.81](http://47.101.71.81). The runtime is positively correlated with the number of mutated sequences. Processing approximately 1 million sequences takes about 5 hours. We have provided an instruction guide in both Github and website to help you use the website. Given potential updates, refer to this repository for accessing the website. 
+For guidance on directed evolution for your sequence, please use our website [http://www.cape-promoter.com](http://www.cape-promoter.com). If this link is not accessible, please use [http://47.101.71.81](http://47.101.71.81). Please note that the runtime is positively correlated with the number of mutated sequences. Processing approximately 1 million sequences takes about 5 hours (we will send you an email about the results after the calculation is finished). We have provided an instruction guide in both Github and website to help you use the website. Given potential updates, refer to this repository for accessing the website. 
 
 
 ## Abstract
