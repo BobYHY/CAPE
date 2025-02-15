@@ -21,14 +21,21 @@ The results processed by both models are fed into a fully connected network for 
 
 ## Availability
 
-### Structure for Folder CAPE_Final
+### Structure for Folder CAPE_Final (Code for the Model)
 - data: Contains all relevant data files.
 - dataset: Contains codes for dataset loading and processing (including Merged CGR matrix generation).
 - model: Contains the network model files.
 - train_and_val: Contains training and evaluation related content.
 - main_exp_task1.py: Code for Task 1.
 - main_exp_task2.py: Code for Task 2.
-- best_previous: Pre-trained model for Task 2.
+- best_previous.pth: Pre-trained model for Task 2.
+
+- ### Structure for Folder Website_server (Code for the Website)
+- best_previous.pth: Trained model weights for the model. It is worth noticing that the Pearson correlation coefficient and other metrics reported in the article are computed via K-fold cross-validation and this weights do not correspond to the specific parameter configurations tied to the reported performance metrics.
+- word2vec.npy: Embedding file containing vector representations of k-mers.
+- promoter50.fasta & blast_promoter50.*: The promoter library file and files used for BLAST analysis.
+- Run.py: Code for directed evolution.
+- run.sh: Shell script to run the entire codebase.
 
 ### Reproducing Our Code
 To reproduce our code, the following environments are required:
