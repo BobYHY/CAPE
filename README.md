@@ -30,7 +30,7 @@ The results processed by both models are fed into a fully connected network for 
 - main_exp_task2.py: Code for Task 2.
 - best_previous.pth: Pre-trained model for Task 2.
 
-- ### Structure for Folder Website_server (Code for the Website)
+### Structure for Folder Website_server (Code for the Website)
 - best_previous.pth: Trained model weights for the model. It is worth noticing that the Pearson correlation coefficient and other metrics reported in the article are computed via K-fold cross-validation and this weights do not correspond to the specific parameter configurations tied to the reported performance metrics.
 - word2vec.npy: Embedding file containing vector representations of k-mers.
 - promoter50.fasta & blast_promoter50.*: The promoter library file and files used for BLAST analysis.
